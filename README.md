@@ -1,4 +1,4 @@
-# Nexus Docs - Android APK (cloud build)
+# Nexus Docs v3 - Android APK (cloud build)
 
 No Android Studio or PC setup needed. GitHub builds the APK for you.
 
@@ -12,3 +12,10 @@ Notes
 - This is a debug-signed APK: fine for your own phone and sharing with family, not for Play Store.
 - To update the app later, replace the files in `www/` and commit again. A new APK is built each time.
 - Backend (Apps Script) is unchanged from the v2 package: the app talks to the same Google Sheet.
+
+What's new in v3
+- Header no longer hides under the status bar / camera cut-out (Android 15 edge-to-edge fix, done in MainActivity via scripts/prep_android.py).
+- Phone back button: closes popup > viewer > vehicle detail > goes to Home. Press back twice on Home to exit.
+- Documents have a Front and a Back slot. Front + Back is ONE document ("Front + Back"), not "2 files".
+- Pull down to refresh, copy document number, share all pages, dark navy header, phone expiry notifications (Profile > Phone notifications).
+- New plugins: @capacitor/app, @capacitor/local-notifications (installed automatically by the GitHub build).
