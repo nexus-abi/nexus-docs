@@ -1,0 +1,7 @@
+{
+  "appId": "com.nexus.dochub",
+  "appName": "Nexus Docs",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "android": { "allowMixedContent": false }
+}
